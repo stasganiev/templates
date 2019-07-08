@@ -1,0 +1,92 @@
+<body>
+
+  <!-- ФОРМЫ -->
+  <form class="" method="POST" action="echo.htmlacademy.ru">
+
+    <!-- КНОПКИ -->
+    <!--Сброс значений по умолчанию (кнопка)-->
+    <input type="reset" value="Надпись">
+    <!--Простая кнопка-->
+    <input type="button" value="Надпись">
+    <!--Кнопка-изображение-->
+    <input type="image" src="img/enter.png" alt="Войти">
+    <!-- Кнопка -->
+    <button type="submit|button|reset">Надпись<img src="img/enter.png"></button>
+
+    <!-- ТЕКСТЫ -->
+    <!-- Обязательное текстовое поле и первый способ привязки -->
+    <label for="id">Надпись</label>
+    <input type="text" id="id" name="name" value="Значение по умолчанию" required>
+    <!-- Второй способ привязки -->
+    <label>
+      <input type="radio"> Радио кнопка
+    </label>
+    <!-- Поле со списком возможных значений -->
+    <input type="text" list="browsers" name="browser">
+    <datalist id="browsers">
+      <option value="Firefox"></option>
+      <option value="Chrome"></option>
+      <option value="Safari"></option>
+    </datalist>
+    <!-- Поле поиска -->
+    <input type="search">
+    <!-- Электронный адрес и сайт -->
+    <input type="email">
+    <input type="url">
+    <!-- Многострочное поле -->
+    <textarea name="name" id="review" rows="5">Текст по умолчанию</textarea>
+    <!-- Пароль -->
+    <input type="password">
+
+    <!-- СПЕЦ. ПОЛЯ -->
+    <!-- Число -->
+    <input type="number" name="amount" id="amount" min=5 max=50 step=5>
+    <!-- Поле ввода даты и времени -->
+    <input type="date"> <!--дата-->
+    <input type="time"> <!--время-->
+    <input type="datetime"> <!--дата и время с указанием временной зоны-->
+    <input type="datetime-local"> <!--дата и время без временной зоны-->
+    <input type="week"> <!--номер недели в году и год-->
+    <input type="month"> <!--месяц и год-->
+    <!-- Диапазон (ползунок) -->
+    <input type="range" min="1" max="14" step="1">
+    <!-- Вывод результата -->
+    <output name="daysoutput"></output>
+    <!-- Выбор цвета -->
+    <input type="color">
+    <!-- Список выбора -->
+    <select name="namelist" multiple> <!--для списка с множественным выбором-->
+      <optgroup label="Имя группы"> <!--группировка значений выбора-->
+        <option value="name1">Имя1</option>
+        <option value="name2">Имя2</option>
+      </optgroup>
+      <option value="name3">Имя3</option>
+      <option value="name4">Имя4</option>
+    </select>
+    <!-- Группировка полей формы -->
+    <fieldset>
+      <legend>Заголовок группы</legend>
+      <input type="text">
+    </fieldset>
+    <!-- Флажок -->
+    <input type="checkbox" checked> <!--установленный-->
+
+    <!-- СПЕЦ. АТРИБУТЫ -->
+    <!-- Обязательность -->
+    <input type="text" required>
+    <!-- Автофокус -->
+    <input type="text" autofocus>
+    <!-- Подсказка -->
+    <input type="text" placeholder="Текст подсказки">
+    <!-- Только чтение -->
+    <input type="text" readonly>
+    <!-- Недоступность -->
+    <input type="text" disabled>
+    <!-- Автозаполнение полей -->
+    <input type="text" autocomplete="on|off">
+    <!-- Шаблон -->
+    <input type="text" pattern="">
+
+  </form>
+
+</body>
