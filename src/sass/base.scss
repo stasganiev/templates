@@ -1,0 +1,112 @@
+// ////////////////////////////
+// Шрифты
+// ////////////////////////////
+@font-face {
+  // font-weight: normal;
+  // font-family: "Noto Sans SC";
+  // src: url("../fonts/NotoSansSC-Regular.woff2") format("woff2"), url("../fonts/NotoSansSC-Regular.woff") format("woff");
+
+  font-weight: 400;
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-Regular.ttf");
+
+  font-style: normal;
+  font-display: swap;
+}
+
+// ////////////////////////////
+// Глобальные
+// ////////////////////////////
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  min-width: $xs-min;
+  margin: 0;
+  padding: 0;
+
+  //font-family: "Nunito", "Helvetica", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: $txt-color;
+  background-color: $bk-color-outline;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+// ////////////////////////////
+// Умолчания
+// ////////////////////////////
+.list-default {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// ////////////////////////////
+// Шаблоны
+// ////////////////////////////
+
+// Медиа-сетка 3
+
+// @media (max-width: $s-max) {
+
+// }
+
+// @media (min-width: $m-min) and (max-width: $m-max) {
+
+// }
+
+// @media (min-width: $l-min) {
+
+// }
+
+// Медиа-сетка 5
+
+// @media (max-width: $xs-max) {
+
+// }
+
+// @media (min-width: $s-min) and (max-width: $s-max) {
+
+// }
+
+// @media (min-width: $m-min) and (max-width: $m-max) {
+
+// }
+
+// @media (min-width: $l-min) and (max-width: $l-max) {
+
+// }
+
+// @media (min-width: $xl-min) {
+
+// }

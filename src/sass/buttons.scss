@@ -1,0 +1,132 @@
+.btn {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+// ////////////////////////////
+// Главное меню (кнопка "Бургер")
+// ////////////////////////////
+.btn__main-menu {
+  position: absolute;
+  right: 10px;
+
+  cursor: pointer;
+}
+
+.navbar__js_closed .btn__main-menu {
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 30px;
+    height: 3px;
+
+    background-color: $color-btn-menu;
+    box-shadow: 0 8px 0 0 $color-btn-menu, 0 16px 0 0 $color-btn-menu;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $color-btn-menu-hover;
+    box-shadow: 0 8px 0 0 $color-btn-menu-hover, 0 16px 0 0 $color-btn-menu-hover;
+  }
+
+  &:active::before {
+    background-color: $color-btn-menu-active;
+    box-shadow: 0 8px 0 0 $color-btn-menu-active, 0 16px 0 0 $color-btn-menu-active;
+  }
+}
+
+.navbar__js_opened .btn__main-menu {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    right: 0;
+
+    width: 25px;
+    height: 4px;
+
+    background-color: $color-btn-menu;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:hover::after,
+  &:focus::after {
+    background-color: $color-btn-menu-hover;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $color-btn-menu-active;
+  }
+}
+
+.navbar__js_nojs .btn__main-menu {
+  display: none;
+}
+
+@media (max-width: $s-max) {
+  .btn__main-menu {
+    top: 15px;
+  }
+
+  .navbar__js_closed .btn__main-menu {
+    width: 30px;
+    height: 27px;
+    top: 10px;
+  }
+
+  .navbar__js_opened .btn__main-menu {
+    width: 25px;
+    height: 22px;
+    top: 12px;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .btn__main-menu {
+    top: 15px;
+  }
+
+  .navbar__js_closed .btn__main-menu {
+    width: 30px;
+    height: 27px;
+    top: 10px;
+  }
+
+  .navbar__js_opened .btn__main-menu {
+    width: 25px;
+    height: 22px;
+    top: 12px;
+  }
+}
+
+@media (min-width: $l-min) {
+  .btn__main-menu {
+    top: 30px;
+  }
+}
+

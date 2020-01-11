@@ -1,0 +1,223 @@
+// ////////////////////////////
+// Контейнер
+// ////////////////////////////
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: $xs-max) {
+  .container {
+    max-width: $xs-content;
+  }
+}
+
+@media (min-width: $s-min) and (max-width: $s-max) {
+  .container {
+    max-width: $s-content;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .container {
+    max-width: $m-content;
+  }
+}
+
+@media (min-width: $l-min) and (max-width: $l-max) {
+  .container {
+    max-width: $l-content;
+  }
+}
+
+@media (min-width: $xl-min) {
+  .container {
+    max-width: $xl-content;
+  }
+}
+
+// ////////////////////////////
+// Видимость
+// ////////////////////////////
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+.hidden {
+  display: none;
+}
+
+.unhidden {
+  display: inline-block;
+}
+
+@media (max-width: $s-max) {
+  .hidden_mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .hidden_tablet {
+    display: none;
+  }
+}
+
+@media (min-width: $l-min) {
+  .hidden_desktop {
+    display: none;
+  }
+}
+
+// ////////////////////////////
+// Сетки
+// ////////////////////////////
+.ones-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-sp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flex-col-sp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: $s-max) {
+  .cmob-to-rtabdesk,
+  .cmobtab-to-rdesk {
+    display: flex;
+    flex-direction: column;
+
+    &_sb {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+
+  .rmob-to-ctabdesk {
+    display: flex;
+    flex-direction: row;
+
+    &_sb {
+      justify-content: space-between;
+    }
+
+    &_sa {
+      justify-content: space-around;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .cmob-to-rtabdesk {
+    display: flex;
+    flex-direction: row;
+
+    &_sb {
+      justify-content: space-between;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+
+  .cmobtab-to-rdesk {
+    display: flex;
+    flex-direction: column;
+
+    &_sb {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+
+  .rmob-to-ctabdesk {
+    display: flex;
+    flex-direction: column;
+
+    &_sb,
+    &_sa {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: $l-min) {
+  .cmob-to-rtabdesk,
+  .cmobtab-to-rdesk {
+    display: flex;
+    flex-direction: row;
+
+    &_sb {
+      justify-content: space-between;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+
+  .rmob-to-ctabdesk {
+    display: flex;
+    flex-direction: column;
+
+    &_sb,
+    &_sa {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+}
