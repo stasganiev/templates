@@ -34,13 +34,12 @@ body {
   margin: 0;
   padding: 0;
 
-  //font-family: "Nunito", "Helvetica", sans-serif;
+  font-family: $font-name, $font-web, $font-family;
   font-style: normal;
   font-size: 12px;
   line-height: 1.25;
-  font-weight: 400;
-  color: $txt-color;
-  background-color: $bk-color-outline;
+  font-weight: normal;
+  @include colors($txt-color, $bk-color);
 }
 
 main {
