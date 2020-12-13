@@ -1,45 +1,14 @@
-.btn {
-  appearance: none;
-  display: inline-block;
-  margin: 0;
-  padding: 10px 16px;
-  min-width: 100px;
-
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-
-  color: inherit;
-  background-color: transparent;
-  text-decoration: none;
-
-  border: none;
-  border-radius: 5px;
-  box-shadow: none;
-  cursor: pointer;
-  transition: 0.3s ease-out;
-
-  &:hover {
-    background-color: transparent;
-  }
-
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px #cbd6ee;
-  }
-}
-
 // ////////////////////////////
 // Главное меню (кнопка "Бургер")
 // ////////////////////////////
-.btn__main-menu {
+.btn__burger {
   position: absolute;
   right: 10px;
 
   cursor: pointer;
 }
 
-.navbar__js_closed .btn__main-menu {
+.navbar__js_closed .btn__burger {
   &::before {
     content: "";
 
@@ -66,7 +35,7 @@
   }
 }
 
-.navbar__js_opened .btn__main-menu {
+.navbar__js_opened .btn__burger {
   &::before,
   &::after {
     content: "";
@@ -102,22 +71,22 @@
   }
 }
 
-.navbar__js_nojs .btn__main-menu {
+.navbar__js_nojs .btn__burger {
   display: none;
 }
 
 @media (max-width: $s-max) {
-  .btn__main-menu {
+  .btn__burger {
     top: 15px;
   }
 
-  .navbar__js_closed .btn__main-menu {
+  .navbar__js_closed .btn__burger {
     width: 30px;
     height: 27px;
     top: 10px;
   }
 
-  .navbar__js_opened .btn__main-menu {
+  .navbar__js_opened .btn__burger {
     width: 25px;
     height: 22px;
     top: 12px;
@@ -125,17 +94,17 @@
 }
 
 @media (min-width: $m-min) and (max-width: $m-max) {
-  .btn__main-menu {
+  .btn__burger {
     top: 15px;
   }
 
-  .navbar__js_closed .btn__main-menu {
+  .navbar__js_closed .btn__burger {
     width: 30px;
     height: 27px;
     top: 10px;
   }
 
-  .navbar__js_opened .btn__main-menu {
+  .navbar__js_opened .btn__burger {
     width: 25px;
     height: 22px;
     top: 12px;
@@ -143,7 +112,7 @@
 }
 
 @media (min-width: $l-min) {
-  .btn__main-menu {
+  .btn__burger {
     top: 30px;
   }
 }

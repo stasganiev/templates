@@ -1,0 +1,25 @@
+.hidden {
+  display: none;
+}
+
+.hidden__no {
+  display: inline-block;
+}
+
+@media (max-width: $s-max) {
+  .hidden_mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .hidden_tablet {
+    display: none;
+  }
+}
+
+@media (min-width: $l-min) {
+  .hidden_desktop {
+    display: none;
+  }
+}

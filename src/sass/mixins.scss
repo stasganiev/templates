@@ -2,3 +2,13 @@
   color: $color;
   background-color: $colorbk;
 }
+
+@mixin size($w: 100px, $h: 100px) {
+  width: $w;
+  height: $h;
+}
+
+@mixin nospace {
+  margin: 0;
+  padding: 0;
+}

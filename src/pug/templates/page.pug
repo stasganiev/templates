@@ -1,0 +1,30 @@
+block config
+  - var lang = 'ru'
+  - var pageTitle = 'Название страницы'
+  - var desc = ''
+  - var key = ''
+  - var addJS = true
+
+doctype html
+html(lang=lang)
+  head
+    meta(charset="utf-8")
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='IE-Edge')
+    title #{pageTitle}
+    if desc
+      meta(name='description' content=desc)
+    if key
+      meta(name='keywords' content=key)
+    block links
+      link(href='css/style_min.css' rel='stylesheet')
+  body
+    header
+      block header
+    main
+      block main
+    footer
+      block footer
+    block scripts
+      if addJS
+        script(src='js/script.js')

@@ -1,0 +1,123 @@
+// Цвета
+@mixin colors($color: $txt-color, $colorbk: $bk-color) {
+  color: $color;
+  background-color: $colorbk;
+}
+
+// Типографика
+@mixin font-mons($fs: 1rem, $lh: 1.25, $fw: normal, $tt: unset) {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+  text-transform: $tt;
+}
+
+@mixin font-qsand($fs: 1rem, $lh: 1.25, $fw: normal, $tt: unset) {
+  font-family: "Quicksand", "Arial", sans-serif;
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+  text-transform: $tt;
+}
+
+// ...устаревшие
+@mixin font_size($lh, $fs) {
+  @media (max-width: $s-max) {
+    font-size: $fs * 0.75;
+    line-height: $lh;
+  }
+
+  @media (min-width: $m-min) {
+    font-size: $fs;
+    line-height: $lh;
+  }
+}
+
+@mixin font_h1($lh: 1.25, $fs: 24px) {
+  font-family: "Quicksand", "Arial", sans-serif;
+  font-weight: bold;
+  @include font_size($lh, $fs);
+}
+
+@mixin font_h2($lh: 1.25, $fs: 19px) {
+  font-family: "Quicksand", "Arial", sans-serif;
+  font-weight: bold;
+  @include font_size($lh, $fs);
+}
+
+@mixin font_h3($lh: 1.25, $fs: 12px) {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: bold;
+  @include font_size($lh, $fs);
+  text-transform: uppercase;
+}
+
+@mixin font_body($lh: 1.25, $fs: 14px) {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: normal;
+  @include font_size($lh, $fs);
+}
+
+// Позиция, размеры и отступы
+@mixin pos-bottom-right($bottom: 0, $right: 0) {
+  position: absolute;
+  bottom: $bottom;
+  right: $right;
+}
+
+@mixin pos-top-left($bottom: 0, $right: 0) {
+  position: absolute;
+  top: $bottom;
+  left: $right;
+}
+
+@mixin size($w: 100px, $h: $w) {
+  width: $w;
+  height: $h;
+}
+
+@mixin nospace {
+  margin: 0;
+  padding: 0;
+}
+
+// Сетка
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin flex-row-sp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@mixin flex-col-sp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@mixin flex-col-ones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
