@@ -1,22 +1,9 @@
-$color-shade100: #1f2041;
-$color-shade75: rgba($color-shade100, 0.75);
-$color-shade50: rgba($color-shade100, 0.5);
-$color-shade25: rgba($color-shade100, 0.25);
-$color-shade5: rgba($color-shade100, 0.05);
-$color-purple: #bc9cff;
-$color-green: #6fcf97;
-
-$color-purple-second: #8ba4f9;
-
-$colors-map: (
-  "shade100": $color-shade100,
-  "shade75": $color-shade75,
-  "shade50": $color-shade50,
-  "shade25": $color-shade25,
-  "shade5": $color-shade5,
-  "purple": $color-purple,
-  "green": $color-green,
-);
-
-$text-color: $color-shade100;
+// базовые цвета
+$text-color: #000;
 $bg-color: #ffffff;
+
+// рабочая палитра
+$border-color: #000;
+$bg-blur-color: #f1f2f2;
+$accent-color: #ffb400;
+$other-color: #808285;

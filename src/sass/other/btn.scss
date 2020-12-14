@@ -1,4 +1,37 @@
 // ////////////////////////////
+// Кнопки
+// ////////////////////////////
+.btn {
+  appearance: none;
+  display: inline-block;
+  @include nospace;
+
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+  text-align: center;
+
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+  transition: 0.25s ease-out;
+
+  &:hover {
+  }
+
+  &:focus {
+  }
+
+  &:active {
+  }
+}
+
+// ////////////////////////////
 // Главное меню (кнопка "Бургер")
 // ////////////////////////////
 .btn__burger {

@@ -5,58 +5,11 @@
 }
 
 // Типографика
-@mixin font-mons($fs: 1rem, $lh: 1.25, $fw: normal, $tt: unset) {
-  font-family: "Montserrat", "Arial", sans-serif;
+@mixin typography($fs: 1rem, $lh: 1.25, $fw: normal, $tt: unset) {
   font-size: $fs;
   line-height: $lh;
   font-weight: $fw;
   text-transform: $tt;
-}
-
-@mixin font-qsand($fs: 1rem, $lh: 1.25, $fw: normal, $tt: unset) {
-  font-family: "Quicksand", "Arial", sans-serif;
-  font-size: $fs;
-  line-height: $lh;
-  font-weight: $fw;
-  text-transform: $tt;
-}
-
-// ...устаревшие
-@mixin font_size($lh, $fs) {
-  @media (max-width: $s-max) {
-    font-size: $fs * 0.75;
-    line-height: $lh;
-  }
-
-  @media (min-width: $m-min) {
-    font-size: $fs;
-    line-height: $lh;
-  }
-}
-
-@mixin font_h1($lh: 1.25, $fs: 24px) {
-  font-family: "Quicksand", "Arial", sans-serif;
-  font-weight: bold;
-  @include font_size($lh, $fs);
-}
-
-@mixin font_h2($lh: 1.25, $fs: 19px) {
-  font-family: "Quicksand", "Arial", sans-serif;
-  font-weight: bold;
-  @include font_size($lh, $fs);
-}
-
-@mixin font_h3($lh: 1.25, $fs: 12px) {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: bold;
-  @include font_size($lh, $fs);
-  text-transform: uppercase;
-}
-
-@mixin font_body($lh: 1.25, $fs: 14px) {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: normal;
-  @include font_size($lh, $fs);
 }
 
 // Позиция, размеры и отступы

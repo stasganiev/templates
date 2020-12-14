@@ -1,8 +1,8 @@
 {
-  "name": "task2",
+  "name": "NameProject",
   "version": "1.0.0",
-  "description": "Task 2",
-  "main": "index.js",
+  "description": "Name project",
+  "main": "main.js",
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax sass",

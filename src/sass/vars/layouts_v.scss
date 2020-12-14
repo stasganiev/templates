@@ -2,7 +2,7 @@
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
-// главная сетка
+// сетка
 $xs-min: 320px; //mobile *
 $xs-max: 599.9px;
 $s-min: 600px;
@@ -12,6 +12,8 @@ $m-max: 1169.9px;
 $l-min: 1170px; //1280px //desktop *
 $l-max: 1439.9px;
 $xl-min: 1440px; //1560px
+
+$min-content: $xs-min;
 
 $xs-padding: 15px;
 $s-padding: 20px;
