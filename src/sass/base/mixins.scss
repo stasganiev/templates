@@ -19,10 +19,22 @@
   right: $right;
 }
 
-@mixin pos-top-left($bottom: 0, $right: 0) {
+@mixin pos-bottom-left($bottom: 0, $left: 0) {
   position: absolute;
-  top: $bottom;
-  left: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin pos-top-right($top: 0, $right: 0) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
+@mixin pos-top-left($top: 0, $left: 0) {
+  position: absolute;
+  top: $top;
+  left: $left;
 }
 
 @mixin size($w: 100px, $h: $w) {
