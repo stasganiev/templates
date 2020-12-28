@@ -1,0 +1,57 @@
+.classname {
+  font-size: 20px; // размер шрифта
+  line-height: normal; // межстрочный интервал (интерлиньяж)
+  font-family: "PT Sans", "Arial", sans-serif; // названия шрифтов, начиная с самого желаемого
+  font-weight: 400; // насыщенность (жирность) шрифта
+  text-align: left | right | center | justify; // выравнивание текста (инлайн-контента) по горизонтали
+  vertical-align: top | middle | bottom | baseline; // вертикальное выравнивание
+  color: red | #f00 | rgb(255, 0, 0) | rgba(255, 0, 0, 0.3); // цвет текста
+  background-color: #000000; // цвет фона
+  white-space: normal | nowrap | pre | pre-wrap; // управление пробелами (норма, без переносов, сохраняет пробелы, сохраняет пробелы и переносит)
+  
+  text-decoration: underline | line-through | overline | none; // оформление текста (подчеркивание, зачеркивание, надчеркивание, без эффектов)
+  text-decoration-line: underline; // вид линии
+  text-decoration-style: solid | double | dotted | dashed | wavy; // стиль линии
+  text-decoration-color: #fff; // цвет линии
+  
+  font-style: normal | italic | oblique; // начертание (обычное, курсив, наклон)
+  text-transform: lowercase | uppercase | capitalize | none; // регистр символов (строчные, заглавные, каждое слово с большой буквы, без оформления)
+  
+  text-shadow: 1px 1px 10px #ccc; // тень текста (смещение по горизонтали, смещение по вертикали, радиус размытия)
+  text-shadow:
+  1px 1px 1px #111111,
+  2px 2px 2px #222222; // множественная тень, начиная с самой верхней (близкой)
+  
+  // Пример: эффекс вдавленности текста
+  color: #2b2328;
+  text-shadow: -1px -1px 1px #1e181c, 2px 2px 1px #52424d;
+  
+  // Пример: винтажная обводка
+  color: #444444;
+  text-shadow: 2px 2px 0 #e5d4c0, 4px 4px 0 rgba(0, 0, 0, 0.2);
+  
+  letter-spacing: 0px | 0em | 0pt; // межсимвольное расстояние
+  word-spacing: 0px | 0em | 0pt; // расстояние между словами
+  word-wrap: normal | break-word; // перенос слов
+  overflow-wrap: normal | break-word; // перенос слов (альтернативный вариант)
+  text-indent: 0px | 0em | 0pt; // отступ первой строки блока (красная строка)
+  
+}
+
+p::first-letter { color: red; } // первая буква блока (буквица)
+
+p::first-line { color: green; } // первая строка блока
+
+.article {
+  column-count: 3; // число колонок текста (многоколончатый текст)
+  column-width: 100px | 10em | 75pt; // минимальная ширина колонки текста
+  column-gap: 1em | 10px | 10pt; // промежуток между колонками
+  direction: ltr | rtl; // направление текста (слева направо, справа налево)
+  unicode-bidi: normal | embed | bidi-override; // поведение символов (норма, направление текста согласно direction, порядок символов согласно direction)
+}
+
+.p {
+  text-overflow: clip | ellipsis; // переполнение текста (обрезка, обрезка с многоточием)
+  overflow: auto | scroll | hidden; // поведение контейнера при переполнении
+}
+
