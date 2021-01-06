@@ -55,6 +55,11 @@ html, body {
     background-color: #253861;
 }
 
+/* Скроллбар на конкретном элементе */
+.classname::-webkit-scrollbar {
+	display: none; /* вариант отключения скроллбара */
+}
+
 /* Стрелки */
 
 ::-webkit-scrollbar-button:vertical:start:decrement {

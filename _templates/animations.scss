@@ -16,7 +16,7 @@
 .classname {
   animation-name: my_drive; // имя анимации, связанное с @keyframes
   animation-iteration-count: 2 | infinite; // количество повторов, по умолчанию 1, infinite = бесконечно
-  animation-direction: normal | reverse | alternate | alternate-reverse | initial | inherit; // направление анимации
+  animation-direction: normal | reverse | alternate | alternate-reverse | initial | inherit; // направление анимации (норма, обратный, попеременно норма/обратно, и наоборот)
   animation-play-state: running | paused; // проикрывание (по умолчанию), пауза
   animation-fill-mode: none | forwards | backwards | both; // применение анимируемых свойств к объектку: только во время, по окончанию, до начала, и до и после
   animation-duration: 0.25s | 250ms;
