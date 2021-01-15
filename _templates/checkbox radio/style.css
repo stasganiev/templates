@@ -1,0 +1,103 @@
+.form__check-label,
+.form__radio-label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.7;
+  color: @color-blue;
+}
+
+.form__check-btn,
+.form__radio-btn {
+  display: none;
+}
+
+// флажок
+.form__check-btn + .form__check-label {
+  background: url("../img/icon-check-off.svg") no-repeat scroll 0 0;
+  cursor: pointer;
+  padding-top: 7px;
+  padding-bottom: 10px;
+
+  position: relative;
+}
+
+.form__check-btn:hover + .form__check-label,
+.form__check-btn:focus + .form__check-label {
+  background: url("../img/icon-check-off-hover.svg") no-repeat scroll 0 0;
+}
+
+.form__check-btn:active + .form__check-label {
+  background: url("../img/icon-check-off-active.svg") no-repeat scroll 0 0;
+}
+
+.form__check-btn:checked + .form__check-label {
+  background: url("../img/icon-check-on.svg") no-repeat scroll 0 0;
+}
+
+.form__check-btn:checked:hover + .form__check-label,
+.form__check-btn:checked:focus + .form__check-label {
+  background: url("../img/icon-check-on-hover.svg") no-repeat scroll 0 0;
+}
+
+.form__check-btn:checked:active + .form__check-label {
+  background: url("../img/icon-check-on-active.svg") no-repeat scroll 0 0;
+}
+
+// Переключатель
+.form__radio-btn + .form__radio-label {
+  background: url("../img/icon-radio-off.svg") no-repeat scroll 0 0;
+  cursor: pointer;
+  padding-top: 7px;
+  padding-bottom: 10px;
+}
+
+.form__radio-btn:hover + .form__radio-label,
+.form__radio-btn:focus + .form__radio-label {
+  background: url("../img/icon-radio-off-hover.svg") no-repeat scroll 0 0;
+}
+
+.form__radio-btn:active + .form__radio-label {
+  background: url("../img/icon-radio-off-active.svg") no-repeat scroll 0 0;
+}
+
+.form__radio-btn:checked + .form__radio-label {
+  background: url("../img/icon-radio-on.svg") no-repeat scroll 0 0;
+}
+
+.form__radio-btn:checked:hover + .form__radio-label,
+.form__radio-btn:checked:focus + .form__radio-label {
+  background: url("../img/icon-radio-on-hover.svg") no-repeat scroll 0 0;
+}
+
+.form__radio-btn:checked:active + .form__radio-label {
+  background: url("../img/icon-radio-on-active.svg") no-repeat scroll 0 0;
+}
+
+// Позиционирование элементов диалога
+  .form__check {
+    margin-bottom: 42px;
+    padding-bottom: 10px;
+  }
+
+  .form__radio {
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+  }
+
+  .form__check:last-child {
+    margin-bottom: 37px;
+    padding-bottom: 10px;
+  }
+
+  .form__radio:last-child {
+    margin-bottom: 37px;
+    padding-bottom: 10px;
+  }
+
+  .form__check-btn + .form__check-label,
+  .form__radio-btn + .form__radio-label {
+    padding-left: 70px;
+  }
+
