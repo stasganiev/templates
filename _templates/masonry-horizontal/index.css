@@ -3,8 +3,7 @@
 body { font-family: sans-serif; }
 
 .grid {
-  background: #EEf;
-  max-width: 900px;
+  position: relative;
   display: grid;
   --grid-gutter: 3px;
   grid-gap: var(--grid-gutter);
@@ -12,29 +11,32 @@ body { font-family: sans-serif; }
   --grid-row-height: 10px;
   grid-auto-columns: var(--grid-row-height);
   grid-auto-flow: column dense;
-  position: relative;
   
+  max-width: 900px;
   max-height: 50vh;
   overflow-x: auto;
+  
+  background: #EEf;
 }
 
 .grid-item {
   min-height: 150px;
   min-width: 150px;
-  background: rgba(198, 255, 198, 0.5);
   position: absolute;
   height: calc(50% - var(--grid-gutter));
   top: 0;
   left: 0;
   
-  border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
+  
+  background: rgba(198, 255, 198, 0.5);
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
 }
 
 .grid-item.grid-item-ready {
